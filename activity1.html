@@ -1,60 +1,80 @@
-<html lang="en">
-
-<head>
-
-    <title>Bootstrap Jumbotron</title>
-
-
-    <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
-
-    </script>
-
-</head>
-
-<body style="text-align:center;">
-
-    <div class="jumbotron jumbotron-fluid">
-
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+    
+        <title>Bootstrap Example</title>
+    
+        <meta charset="utf-8">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    </head>
+    <body>
         <div class="container">
 
-            <h1 style="color:orange;">
+            <h2>Carousel Example</h2>
 
-                Codingal
+            <div id="my carousel" class="carousel slide" data-ride="carosel">
+                <!--indicators-->
 
-            </h1>
+                <ol class="carousel-indicators">
+                    <li data-target="#mycarousel" data-side-to="0" class="active"></li>
+                    <li data-target="#mycarousel" data-side-to="1"></li>
+                    <li data-target="#mycarousel" data-side-to="2"></li> </li>
 
-                          <p>Codingal will help you fall in love with coding.</p>
+                    <!--Wrapper for slides-->
+
+                    <div class="carousel-inner"></div>
+                    <div class="item active"></div>
+                    <image src="tiger-jpg.jpg" alt="Image 1">
+                  </image>
+
+                <div class="item"></div>
+                <image src="towerjpg.jpg" alt="Image 2">
+
+                </image>
+
+                        <div class="item"></div>
+                        <image src="Sunflower_from_Silesia2.jpg" alt="Image 3">
+                        
+                        </image>
 
 
+                        <!--Left and Right controls-->
+
+                        <a class="left carousel-control" href="" data-slide="prev">
+                        
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        
+                            <span class="sr-only">Previous</span>
+
+
+                            </a>
+                            
+                            <a class="right carousel-control" href="#myCarousel" data-slide-"Next">
+                        
+                            
+                            
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            
+                                
+                            
+                                <span class="sr-only">Next</span>
+                            
+                                
+                            
+                            </a>
+                </ol></div>    
+                            
+
+                </ol>
+            </div>
         </div>
-
-    </div>
-
-    <div class="container mt-3">
-
-    
-
-        <h2>Buttons</h2>
-
-        
-
-    
-
-        <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-secondary">Secondary</button>
-        <button type="button" class="btn btn-Success">Success</button>
-        <button type="button" class="btn btn-Warning">Warning</button>
-        <button type="button" class="btn btn-Danger">Danger</button>
-
-    </div>
-
-</body>
-
-</html>
+    </body>
+ </html>

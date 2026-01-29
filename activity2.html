@@ -4,32 +4,111 @@
 
 <head>
 
-    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+
+    </script>
+
+    <style>
+        body {
+
+            position: relative;
+
+        }
+
+        p {
+
+            font-size: 18px;
+
+        }
+
+        #section1 {
+            padding-top: 50px;
+            height: 500px;
+            color: white;
+            background-color: rgb(0, 0, 0);
+        }
+
+        #section2 {
+            padding-top: 50px;
+            height: 500px;
+            color: green;
+            background-color: white;
+        }
+    </style>
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target-".navbar" data-offset="50">
 
-    <div class="container">
-
-        <h2>Spinners</h2>
-
-        <p>To create a spinner/loader, use the <code>.spinner-border</code> class:</p>
-
-        <div class="spinner-border"></div>
-
+    <nav class="navbar navbar-inverse navbar-fixed-top >                                       
         
+        <div class=container-fluid>
 
-    </div>
+            <div class="navbar-header">
 
+                <button type="button" class="navbar-toggle" 28 data-toggle="collapse" data-target="#myNavbar">
+
+                    
+
+                    <span class="icon-bar"></span>
+
+                    
+
+                    <span class="icon-bar"></span>
+
+                    
+
+                    <span class="icon-bar"></span>
+
+                     </button>
+
+                
+
+                <a class="navbar-brand" href="#">Codingal</a>
+
+                
+            </div>
+
+             <div>
+
+                
+
+                
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+
+                    <ul class="nav navbar-nav">
+
+                    
+
+                        <li><a href="#section1">Section 1</a></li>
+                        <li><a href="#section1">Section 2</a></li>
+                    </ul>
+                </div>
+             </div>
+    </nav>
+
+    <div id="section1" class="container-fluid">
     
+        <h1>Section 1</h1>
+    
+         <h3>Codingal</h3>
+    
+    
+    
+        <h5>Codingal is on a mission to inspire school kids to fall in love with coding. Coding is proven to develop
+            creativity, logical thinking and problem solving skills in kids. Coding is an essential skill of the future and
+            more than 60% of all jobs in STEM-related fields require knowledge of code. Kids who start learning to code at a
+            young age are guaranteed to become leaders, creators and entrepreneurs of the future.</h5>
 
+            <p>Scroll  this section. </p>
+
+    </div>    
 </body>
-
 </html>
