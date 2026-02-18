@@ -1,40 +1,34 @@
 <html>
 
-<head>
-
-    <title>JavaScript Math Object Methods</title>
-
-</head>
-
 <body>
 
-    <scripts type="text/javascript">
+    <h2>JavaScript Array Methods</h2>
 
-        varvalue  Math.abs (20);
+    <h2>join() and pop()</h2>
 
-        document.write("Demo Test Value : " + value
-            + "<br>");
+    <p>The join() method joins array elements into a string and the pop() method removes the last element from an array.
+    </p>
 
-        var value Math.acos(-1);
+    <p id="myjoin"></p>
 
-        document.write("Demo1 Test Value: + valu 
+    <p id="myfirstpop"></p>
 
-            + "<br>");
+    <p id="mysecondpop"></p>
 
-        
+    <script>
 
-        
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
 
-         var value Math.asin(1);                                                                                                                                                                document.write("Demo2 Test Value: + value  + "<br>")
+        document.getElementById("myjoin").innerHTML = fruits.join(" * ");
 
-        
+        document.getElementById("myfirstpop").innerHTML = fruits;
 
-var value = Math.atan(.5);
-    ocument.write("Demo3 Test Value: + value
+        fruits.pop();
 
-    +<br>)
+        document.getElementById("mysecondpop").innerHTML =  fruits;
 
-    </scripts>
+    </script>
 
 </body>
+
 </html>

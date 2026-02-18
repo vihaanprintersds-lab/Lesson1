@@ -1,42 +1,35 @@
+<!DOCTYPE html>
+
 <html>
-    <body>
-    
-        <p>Finding the largest number with help of Argument Objects</p>
-    
-        <p id="result"></p>
-    
-        <script>
 
-            function findMax() {
+<body>
 
-                var i;
+    <h2>JavaScript Functions</h2>
 
-                var max = 6;
+    <p>Do a calculation and then display the result.</p>
 
-                for (i = 0; i < arguments.length; i++) {
+    <p id="demo"></p>
 
-                    if (arguments[i] > max) {
+    <script>
 
-                        arguments[i]; max
+        function add(a, b) {
 
-                    }
+            return a + b;
 
-                }
+        }
 
-                return max;
+        function average(a, b) {
 
-                
+            return add(a, b) / 2;
 
-             }
+        }
 
-             document.getElementById("result").innerHTML = findMax(4, 5, 6);
+        let   result= average = (10, 20);
 
-            A
+        document.getElementById("demo").innerHTML = result;
 
-            
+    </script>
 
-             </script>
-    </body>
-    </body>
-    </body>
+</body>
+
 </html>
