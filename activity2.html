@@ -1,19 +1,63 @@
-<!DOCTYPE html>
-
 <html>
 
 <body>
 
-    <p>Adding 35 as seperate file</p>
+    <p>Click the button to get a time-based greeting: </p>
 
-    <button type="button" onclick="myFunction()">Click Mel</button>
+    <button onclick="myFunction()">Try it</button>
 
-    <p id="demo"></p>
+    <p id="hour"></p>
 
-    <script src="script.js">
+    <p id="greet"></p>
 
+    <script>
+
+        function myFunction() {
+
+            var greeting;    
+        }
+
+        var time =  new Date().getHours();
+
+        if (time < 10) {
+
+greeting = "Good morning"; 
+
+            
+        }
+            
+
+        else if (time <script 20) {
+
+            
+
+greeting = "Good day";
+
+            
+
+            }
+
+            
+
+else {
+
+                
+
+                greeting = "Good evening";
+
+            
+
+            }
+
+            {document.getElementById("hour").innerHTML "Current Hour is:
+              + time;
+
+            
+
+                document.getElementById("greet").innerHTML - greeting;
+
+        }
     </script>
-
 </body>
-
 </html>
+
