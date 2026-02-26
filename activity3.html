@@ -1,31 +1,55 @@
-<!DOCTYPE html>
+<h2>JavaScript Class Static Methods</h2>
 
-<html>
+<p>A static method is created with the "static" keyword, and you can only call the method on the class itself.</p>
 
-<body>
+<p id="hello"></p>
 
-    <h2>JavaScript While Loop</h2>
+<p id="hi"></p>
 
-    <p id="number"></p>
+<p id="welcome"></p>
 
-    <script>
+<script>
 
-        var text = "";
+    class Student {
 
-        var i = 0;
+        constructor(name) {
 
-        while (i < 10) {
-
-            text += "<br>The number is " + i;
-
-            i++;
+            this.studentName = name;
 
         }
 
-        document.getElementById("number").innerHTML = text;
+        static hello() { // static method
 
-    </script>
+            return "Hello!!";
 
-</body>
+        }
 
-</html>
+        static welcome(x) {
+
+            return "Welcome " + x.studentName;
+
+        }
+
+        hi() {
+
+            return "Hi " + this.studentName;
+
+        }
+
+    }
+
+    myname = new Student("Carol");
+
+    //Call 'hello()' on the class Student and NOT on the 'myname' object because 'hello()' is a static method it cannot access object
+
+    document.getElementById("hello").innerHTML = Student.hello();
+
+    // Call 'hi()' on the 'myname' object:
+
+    document.getElementById("hi").innerHTML = myname.hi();
+
+    // Call 'welcome()' can access the object since parameter is passed
+
+    document.getElementById("welcome").innerHTML = Student.welcome(myname);
+
+</script>

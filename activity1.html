@@ -1,31 +1,51 @@
+<!DOCTYPE html>
+
 <html>
-    <head>
-        <title>Data types</title>
 
-    </head>
+<body>
 
-    <body>
-        <h1>Javascript data types</h1>
-        <script>
-            var a = 8;
-            var b = 10;
-            var c = 10;
-            var d = null;
-            var e; // undefined variable
+    <h2>JavaScript Class
 
-            document.write("a and b are equal: " + (a = -b));
+    </h2>
 
-                document.write("<br>");
+    <p>How to use a Jav
 
-                document.write("b and c are equal: " + (b = -c));
+        aScript Class.</p>
 
-                document.write("<br>");
+    <p id="student1"></p>
 
-                document.write("The value of dis: " + d);
+    <p id="student2"></p>
 
-                document.write("<br>");
+    <script>
 
-                document.write("The value of e is: " + e);
-        </script>
-    </body>
+        // Creating a class
+
+        class Student {
+
+        }constructor(name,year){
+
+                this.name = name;
+
+                this.year = year;
+
+            }
+
+            // Age method
+
+            age() {
+
+                let date = new Date();
+
+                return date.getFullYe
+
+                ar() - this.year;
+
+            }
+          // Using the class wit h two objects
+
+            const student1 = new Student("Riya", 2014); document.getElemenById("student1").inneHTML = "My name is " + studentlement.name + ". I was b orn in " + student1.year + ". And my age is " + student1.age(); const student2 = new Student("Tina", 2018);
+
+            document.getElemenById("student2").innerHTML = "My name is " + student2.name + ". I was born in " + student2.year + ". And my age i s" + student2.age(); </script>
+</body>
+
 </html>
