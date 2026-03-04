@@ -2,50 +2,45 @@
 
 <html>
 
+<head>
+
+    <title>JavaScript Array Sort</title>
+
+</head>
+
 <body>
 
-    <h2>JavaScript Class
+    <h2>JavaScript Array Sort</h2>
 
-    </h2>
+    <p>Click the button to sort the array in ascending order.</p>
 
-    <p>How to use a Jav
+    <button onclick="ascending()">Ascending order</button>
 
-        aScript Class.</p>
+    <button onclick="descending()">Descending order</button>
 
-    <p id="student1"></p>
-
-    <p id="student2"></p>
+    <p id="result"></p>
 
     <script>
 
-        // Creating a class
+        var points = [40, 100, 1, 5, 25, 10];
 
-        class Student {
+        document.getElementById("result").innerHTML = points;
 
-        }constructor(name,year){
+        function ascending() {
 
-                this.name = name;
+            points.sort(function (a, b) { });
 
-                this.year = year;
+            return a - b;
 
-            }
+            document.getElementById("result").innerHTML= points;
+        }
 
-            // Age method
+        function descending() {
+            point.sort(function(a, b) {
+                return b - a;
+            });
 
-            age() {
-
-                let date = new Date();
-
-                return date.getFullYe
-
-                ar() - this.year;
-
-            }
-          // Using the class wit h two objects
-
-            const student1 = new Student("Riya", 2014); document.getElemenById("student1").inneHTML = "My name is " + studentlement.name + ". I was b orn in " + student1.year + ". And my age is " + student1.age(); const student2 = new Student("Tina", 2018);
-
-            document.getElemenById("student2").innerHTML = "My name is " + student2.name + ". I was born in " + student2.year + ". And my age i s" + student2.age(); </script>
+          document.getElementById("result").innerHTML = points;  }
+        </script>
 </body>
-
 </html>

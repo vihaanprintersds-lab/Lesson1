@@ -4,56 +4,25 @@
 
 <body>
 
-    <h2>JavaScript Class Inheritance</h2>
+    <p>Multiply every element in the array with 10:</p>
 
-    <p>Use the "extends" keyword to inherit all methods from another class.</p>
-
-    <p>Use the "super" method to call the parent's constructor function.</p>
-
-    <p id="details"></p>
+    <p id="product_value"></p>
 
     <script>
 
-        class Car {
+        var numbers = [28, 6, 19, 95];
 
-            constructor(brand) {
+        function myFunction(num) {
 
-                this.carname = brand;
-
-            }
-
-            present() {
-
-                return 'I have a ' + this.carname;
-
-            }
+            return num * 10;
 
         }
 
-        class Model extends Car {
+        var newarray = numbers.map(myFunction);
 
-            constructor(brand, mod) {
-
-                super(brand);
-
-                this.model = mod;
-
-            }
-
-            show() {
-
-                return this.present() + ', it is a ' + this.model;
-
-            }
-
-        }
-
-        let myCar = new Model("Ford", "Mustang");
-
-        document.getElementById("details").innerHTML = myCar.show();
+        document.getElementById("product_value").innerHTML = newarray;
 
     </script>
 
 </body>
-
 </html>
