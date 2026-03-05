@@ -1,28 +1,18 @@
 <!DOCTYPE html>
-
 <html>
 
 <body>
-
-    <p>Multiply every element in the array with 10:</p>
-
-    <p id="product_value"></p>
-
+    <h2>JavaScript Error Handling</h2>
+    <p>This example demonstrates how to use <b>catch</b> to display an
+        error.</p>
+    <p id="error_message"></p>
     <script>
-
-        var numbers = [28, 6, 19, 95];
-
-        function myFunction(num) {
-
-            return num * 10;
-
-        }
-
-        var newarray = numbers.map(myFunction);
-
-        document.getElementById("product_value").innerHTML = newarray;
-
+        try {
+            addalert("Welcome guest!");
+catch (err)} {
+                document.getElementById("error_message").innerHTML err.message;
+}
     </script>
-
 </body>
+
 </html>
