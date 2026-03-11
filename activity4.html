@@ -4,29 +4,30 @@
 
 <body>
 
-    or <h2> Operator</h2>
+    <h2>JavaScript async / await</h2>
 
-    <p id="demo"></p>
+    <h1 id="result"></h1>
 
     <script>
 
-        <!--Addition-->
+        async function add(a, b) {
 
-        //*use +, -, *, / operators*/
+            let response = await a + b;
 
-         var x = 5;
+            display(response);
 
-         var y 2;
+        }
 
-        var z = x + y;
+        function display(some) {
 
-                document.getElementById("demo").innerHTML - z;
+            document.getElementById("result").innerHTML = some;
 
-         </script>
+        }
+
+        add(5, 20);
+
+    </script>
+
 </body>
-    
-</body>
-
-
 
 </html>
